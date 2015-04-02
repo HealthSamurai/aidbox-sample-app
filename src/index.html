@@ -6,28 +6,71 @@
     <title>Empty App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body>
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#/">
-            <span class="glyphicon glyphicon-plus-sign icon"></span>
-            Empty App
-          </a>
-        </div>
-        <div id="navbar">
-          <ul class="nav navbar-nav">
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li ng-if="currentUser">User: {{currentUser}}</li>
-          </ul>
-        </div><!--/#navbar -->
-      </div>
-    </nav>
+<!--   <body> -->
+<!--     <!&#45;&#45; Static navbar &#45;&#45;> -->
+<!--     <nav class="navbar navbar&#45;default navbar&#45;static&#45;top"> -->
+<!--       <div class="container"> -->
+<!--         <div class="navbar&#45;header"> -->
+<!--           <a class="navbar&#45;brand" href="#/"> -->
+<!--             <span class="glyphicon glyphicon&#45;plus&#45;sign icon"></span> -->
+<!--             Empty App -->
+<!--           </a> -->
+<!--         </div> -->
+<!--         <div id="navbar"> -->
+<!--           <ul class="nav navbar&#45;nav"> -->
+<!--           </ul> -->
+<!--           <ul class="nav navbar&#45;nav navbar&#45;right"> -->
+<!--           </ul> -->
+<!--         </div><!&#45;&#45;/#navbar &#45;&#45;> -->
+<!--       </div> -->
+<!--     </nav> -->
+<!--  -->
+<!--   </body> -->
+<!-- </html> -->
 
-    <script src="app.js"></script>
-  </body>
-</html>
+<body ng-cloak>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><i class="icon ion-ios-pricetags"></i></a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ng-if="currentUser"><a href="/profile">User: {{currentUser}}</a></li>
+          <li ng-if="currentUser"><a href="/signout">exit</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      <h3>You footer</h3>
+    </div>
+    <div class="container-fluid bottom">
+      <div class="row">
+        <div class="col-md-12">Footer...</div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</head></html>
