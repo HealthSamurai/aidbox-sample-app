@@ -1,0 +1,42 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+
+@redy: #e62b1e;
+
+.navbar-static-top.navbar-default {
+  border-bottom-width: 2px;
+  border-color: @redy;
+  background-color: #f1f1f1;
+}
+
+.navbar-default .navbar-brand {
+  color: @redy;
+
+  .icon.glyphicon {
+    position: relative;
+    top: 3px;
+  }
+
+  .navbar-nav>li>a {
+    color: #666;
+    font-weight: bold;
+  }
+
+  .navbar-nav>.active>a {
+    font-weight: bold;
+  }
+
+  .navbar-nav.navbar-right li {
+    line-height: 50px;
+  }
+
+  .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+    color: black;
+  }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

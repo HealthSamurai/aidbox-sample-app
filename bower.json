@@ -1,0 +1,17 @@
+{
+  "name": "Empty App",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-cookies": "latest",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "bootstrap": "latest",
+    "fhir": "0.0.7",
+    "fontawesome": "latest"
+  },
+  "resolutions": {
+    "angular": "1.3.14"
+  }
+}
