@@ -1,3 +1,7 @@
+# This repository should be moved
+
+This repository should be moved to [aidbox](https://github.com/aidbox) organization
+
 Empty App
 ======================
 
